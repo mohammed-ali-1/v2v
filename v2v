@@ -37,40 +37,6 @@ If no configuration is given to the tool, it will take the default values.
     volume2volume ...
 ```
 
-## Installation
-
-### Install `oc`
-
-- https://docs.openshift.org/latest/cli_reference/get_started_cli.html#installing-the-cli
-
-### From binary
-
-#### Install the binary: `volume2volume`
-
-Download the binary from /binaries/< your operative system> and run:
-
-```
-    chmod +x volume2volume
-    sudo mv ./volume2volume /usr/local/bin/volume2volume
-```
-
-### From source
-
-Note: We are in the progress of converting to a default Go project structure.
-Until then, please use the following commands to compile and install:
- 
-```
-    git clone <this repository>
-    mv volume2volume $GOPATH/src/volume2volume
-    go get github.com/mitchellh/go-homedir
-    go get github.com/spf13/cobra
-    go get github.com/spf13/viper
-    cd $GOPATH/src/volume2volume
-    go build volume2volume
-    chmod +x volume2volume
-    sudo mv ./volume2volume /usr/local/bin/volume2volume
-```
-
 ## First steps
 
 This small example shows how to migrate the data in the volumes of an OpenShift application from 
